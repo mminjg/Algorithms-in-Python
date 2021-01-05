@@ -21,6 +21,18 @@ for i in range(n):
 arr = [[0] * 2 for _ in range(3)]   # == [[0 for j in range(2)] for i in range(3)]
 
 
+# 리스트 정렬
+a = [1, 10, 4, 7, 3]
+a.sort()
+a.sort(reverse=True)    # 내림차순
+s = ['가', '나다', '라', '마바아자', '차카파']
+s.sort(key=len) # len에 따라 정렬
+
+
+# 반복되는 수열
+M= 8; K=3
+int(M / (K + 1)) * K + M % (K + 1)
+
 # itertools
 from itertools import permutations
 from itertools import combinations
