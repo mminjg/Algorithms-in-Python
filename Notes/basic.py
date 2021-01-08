@@ -27,11 +27,13 @@ a.sort()
 a.sort(reverse=True)    # 내림차순
 s = ['가', '나다', '라', '마바아자', '차카파']
 s.sort(key=len) # len에 따라 정렬
-
+k = [[1,2],[6,1],[4,9],[3,0]]
+k.sort(key=lambda x: (x[1], x[0]))    # 1번째 원소, 0번째 원소 기준 정렬
 
 # 반복되는 수열
 M= 8; K=3
 int(M / (K + 1)) * K + M % (K + 1)
+
 
 # itertools
 from itertools import permutations
@@ -48,3 +50,33 @@ result = list(combinations(data, 3))
 result = list(product(data, repeat=2)) # 2개 뽑는 모든 순열 (중복 허용)
 # 중복 조합 구하기
 result = list(combinations_with_replacement(data, 2)) # 2개 뽑는 모든 조합 (중복 허용)
+
+
+# heapq / 파이썬의 기본 힙은 최소힙
+import heapq
+
+def heapsort(iterable):
+    h = []
+    result = []
+    # 모든 원소를 차례대로 힙에 삽입
+    for value in iterable:
+        heapq.heappush(h, value)
+    # 힙에 삽입된 모든 원소를 차례대로 꺼내 담기
+    for i in range(len(h)):
+        result.append(heapq.heappop(h))
+    return result
+
+result = heapsort([1,3,5,9,7,8,4,0])
+
+# 최대 힙
+import heapq
+def heapsort(iterable):
+    h = []
+    result = []
+    # 모든 원소를 차례대로 힙에 삽입
+    for value in iterable:
+        heapq.heappush(h, -value)
+    # 힙에 삽입된 모든 원소를 차례대로 꺼내 담기
+    for i in range(len(h)):
+        result.append(-heapq.heappop(h))
+    return result
