@@ -1,13 +1,14 @@
 # sys를 이용한 input
 import sys
+input = sys.stdin.readline
 
 # 정수 입력
-n = int(sys.stdin.readline())
+n = int(input())
 # 문자열 입력, 마지막 \n 제거 필요
-data = sys.stdin.readline().rstrip()
+data = input().rstrip()
 # 정수 리스트
-arr = list(map(int, sys.stdin.readline().split()))
-
+arr = list(map(int, input().split()))   # 이어서
+arr = [int(input()) for _ in range(n)]  # 엔터
 
 # 1차원 리스트 0으로 초기화 [0, 0,  ... , 0]
 arr = [0] * n
