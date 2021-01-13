@@ -11,7 +11,7 @@ for i in range(n):
 for i in range(n):
     b[i] = list(sys.stdin.readline().rstrip())
 
-# 맨 왼쪽 오른쪽 값은 한번 확인하면 더이상 고려하지 않아도 된다.
+# 맨 위쪽의 왼쪽 값은 한번 확인하면 더이상 고려하지 않아도 된다.
 count = 0
 for i in range(n-2):
     for j in range(m-2):
