@@ -1,3 +1,4 @@
+# 풀이참고 ***
 import sys
 input = sys.stdin.readline
 x, y, m = map(int, input().split())
