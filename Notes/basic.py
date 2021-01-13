@@ -6,10 +6,13 @@ input = sys.stdin.readline
 n = int(input())
 # 문자열 입력, 마지막 \n 제거 필요
 data = input().rstrip()
+# 문자열 한 글자씩 분리해 저장
+n = int(input())
+words = [[list(input().rstrip())] for _ in range(n)]
+
 # 정수 리스트
 arr = list(map(int, input().split()))   # 이어서
 arr = [int(input()) for _ in range(n)]  # 엔터
-
 # 1차원 리스트 0으로 초기화 [0, 0,  ... , 0]
 arr = [0] * n
 # 1차원 리스트 i값으로 초기화 [0, 1, 2, 3, .. 9]
@@ -17,10 +20,8 @@ arr = [ i for i in range(10)]   # == list(range(10), list(range(0, 10)
 # 1차원 리스트에 입력값 넣기
 for i in range(n):
     arr[i] = int(sys.stdin.readline())  # append로 초기화 하는 것보다 빠르다
-
 # 2차원 리스트 초기화 [[0, 0], [0, 0], [0, 0]]
 arr = [[0] * 2 for _ in range(3)]   # == [[0 for j in range(2)] for i in range(3)]
-
 
 # 리스트 정렬
 a = [1, 10, 4, 7, 3]
@@ -81,3 +82,8 @@ def heapsort(iterable):
     for i in range(len(h)):
         result.append(-heapq.heappop(h))
     return result
+
+
+# 아스키코드 <-> 문자
+ord('a')
+arr = [chr(i) for i in range(ord('a'), ord('z')+1)]
