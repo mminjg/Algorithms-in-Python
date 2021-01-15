@@ -2,7 +2,8 @@
  알고리즘 대회 / 코딩테스트를 위한 Python 소스코드 저장소입니다.
 
 ## Notes
-- basic.py : 파이썬 기본 문법
+- basic.py
+- 가장 긴 증가하는 부분 수열.py
 ## Problems  
 백준, 프로그래머스, 코딩 테스트 기출 등 문제별 소스 코드
 - Backtracking
