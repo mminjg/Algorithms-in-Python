@@ -22,6 +22,11 @@ for i in range(n):
     arr[i] = int(sys.stdin.readline())  # append로 초기화 하는 것보다 빠르다
 # 2차원 리스트 초기화 [[0, 0], [0, 0], [0, 0]]
 arr = [[0] * 2 for _ in range(3)]   # == [[0 for j in range(2)] for i in range(3)]
+# 2차원 주어진 개수만큼 초기화
+for i in range(n):
+    arr.append(a[index:index + m])
+    index += m
+
 
 # 리스트 정렬
 a = [1, 10, 4, 7, 3]
@@ -54,7 +59,7 @@ result = list(product(data, repeat=2)) # 2개 뽑는 모든 순열 (중복 허�
 result = list(combinations_with_replacement(data, 2)) # 2개 뽑는 모든 조합 (중복 허용)
 
 
-# heapq / 파이썬의 기본 힙은 최소힙
+# heapq / 파이썬의 기본 힙은 최소힙 - 오름차순
 import heapq
 
 def heapsort(iterable):
@@ -70,7 +75,7 @@ def heapsort(iterable):
 
 result = heapsort([1,3,5,9,7,8,4,0])
 
-# 최대 힙
+# 최대 힙 - 내림차순
 import heapq
 def heapsort(iterable):
     h = []
