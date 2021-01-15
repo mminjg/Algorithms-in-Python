@@ -7,6 +7,7 @@
 백준, 프로그래머스, 코딩 테스트 기출 등 문제별 소스 코드
 - Backtracking
 - Binary Search
+- Brute Force
 - Dynamic Programming
 - Greedy
 - Sorting
