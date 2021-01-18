@@ -10,6 +10,10 @@ data = input().rstrip()
 n = int(input())
 words = [[list(input().rstrip())] for _ in range(n)]
 
+arr = [[]] * n
+for i in range(n):
+    arr[i] = list(input().rstrip())
+
 # 정수 리스트
 arr = list(map(int, input().split()))   # 이어서
 arr = [int(input()) for _ in range(n)]  # 엔터
