@@ -2,6 +2,7 @@ import sys
 input = sys.stdin.readline
 
 def go(idx):
+    # 0의 좌표 인덱스가 마지막 + 1 이라면 다 채운 것이므로 출력한다.
     if idx == len(zero):
         for i in range(9):
             for j in range(9):
@@ -21,7 +22,7 @@ def go(idx):
         for j in range(y // 3 * 3, y // 3 * 3 + 3):
             check[arr[i][j]] = True
 
-    # 3가지 조건을 만족하는 숫자가 있으면 다음 0으로
+    # 3가지 조건에서 공통으로 쓰이지 않은 숫자가 있으면 다음 0으로
     flag = False
     for i in range(1, 10):
         if not check[i]:
@@ -30,7 +31,7 @@ def go(idx):
             go(idx + 1)
             arr[x][y] = 0
 
-    # 적절한 숫자가 없으면
+    # 쓰이지 않은 숫자가 없으면 return
     if not flag:
         return
 
@@ -38,7 +39,7 @@ arr = [[]] * 9
 for i in range(9):
     arr[i] = list(map(int, input().split()))
 
-# 0인 좌표를 저장하는 수열 초기화
+# 0인 좌표를 저장하는 리스트 초기화
 zero = []
 for i in range(9):
     for j in range(9):
