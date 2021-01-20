@@ -25,5 +25,7 @@ n, m = map(int, input().split())
 arr = list(map(int, input().split()))
 visit = [False] * n
 seq = [0] * m
-arr.sort()
+arr.sort()  # 사전 순으로 증가하는 순서임으로 정렬한다.
 go(0, 0)
+
+# 고르는 숫자가 이전과 같은 숫자이면, 수열이 중복되는 것이므로 생략해야 한다.
