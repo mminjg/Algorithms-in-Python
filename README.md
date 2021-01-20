@@ -5,7 +5,7 @@
 - basic.py
 - 가장 긴 증가하는 부분 수열.py
 ## Problems  
-백준, 프로그래머스, 코딩 테스트 기출 등 문제별 소스 코드
+백준, 프로그래머스, 코딩 테스트 기출, 이코테 책 등 문제별 소스 코드
 - Backtracking
 - Binary Search
 - Brute Force
