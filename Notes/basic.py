@@ -96,3 +96,5 @@ def heapsort(iterable):
 # 아스키코드 <-> 문자
 ord('a')
 arr = [chr(i) for i in range(ord('a'), ord('z')+1)]
+# 문자배열을 문자열로
+print(''.join(list))
