@@ -2,11 +2,14 @@
  알고리즘 대회 / 코딩테스트를 위한 Python 소스코드 저장소입니다.
 
 ## Notes
+- Binary Search.py
 - basic.py
 - 가장 긴 증가하는 부분 수열.py
+- 좌표.py
 ## Problems  
 백준, 프로그래머스, 코딩 테스트 기출, 이코테 책 등 문제별 소스 코드
-- Backtracking
+- Backtracking   
+- BFS / DFS
 - Binary Search
 - Brute Force
 - Dynamic Programming
