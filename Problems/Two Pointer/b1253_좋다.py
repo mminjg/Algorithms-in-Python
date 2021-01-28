@@ -8,6 +8,7 @@ A.sort()
 cnt = 0
 for i in range(n):
     target = A[i]
+    # 양쪽에서 접근
     start = 0
     end = n - 1
 
