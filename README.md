@@ -2,7 +2,9 @@
  알고리즘 대회 / 코딩테스트를 위한 Python 소스코드 저장소입니다.
 
 ## Notes
+- BFS.py
 - Binary Search.py
+- DFS.py
 - basic.py
 - 가장 긴 증가하는 부분 수열.py
 - 좌표.py
@@ -15,3 +17,4 @@
 - Dynamic Programming
 - Greedy
 - Sorting
+- Two Pointer
