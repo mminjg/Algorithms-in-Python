@@ -10,10 +10,10 @@
 - 좌표.py
 ## Problems  
 백준, 프로그래머스, 코딩 테스트 기출, 이코테 책 등 문제별 소스 코드
-- Backtracking   
-- BFS / DFS
+- Backtracking
 - Binary Search
 - Brute Force
+- DFS, BFS
 - Dynamic Programming
 - Greedy
 - Sorting
