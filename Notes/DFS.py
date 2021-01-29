@@ -16,7 +16,7 @@ visited = [False] * (V + 1)
 
 # 그래프 간선 입력받기
 for i in range(E):
-    a, b = map(int, sys.stdin.readline().split())
+    a, b = map(int, input().split())
     # 가중치가 없는 무향 그래프
     graph[a].append(b)
     graph[b].append(a)
@@ -43,7 +43,7 @@ visited = [False] * (V + 1)
 
 # 그래프 간선 입력받기
 for i in range(E):
-    a, b = map(int, sys.stdin.readline().split())
+    a, b = map(int, input().split())
     # 가중치가 없는 무향 그래프
     graph[a][b] = 1
     graph[b][a] = 1
