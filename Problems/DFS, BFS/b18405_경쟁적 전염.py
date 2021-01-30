@@ -18,7 +18,7 @@ for i in range(n):
 
 s, target_x, target_y = map(int, input().split())
 
-# 번호가 낮은 종류부터 증식
+# 번호가 낮은 종류부터 증식, 큐에 낮은 번호부터 삽입하고 시작해야 한다**
 start.sort()
 queue = deque(start)
 
