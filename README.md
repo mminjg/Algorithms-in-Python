@@ -17,4 +17,6 @@
 - Dynamic Programming
 - Greedy
 - Sorting
+- Stack, Queue, Deque
+- String
 - Two Pointer
