@@ -11,11 +11,11 @@ for i in range(1, n+1):
         pre[i][j] = pre[i][j-1] + pre[i-1][j] - pre[i-1][j-1] + arr[j-1]
 
 max_profit = pre[0][0]
-# k * k 크기의 정사각형으로 자른다.
+# 정사각형으로 자른다.
 for k in range(n):
     for i in range(1, n-k+1):
         for j in range(1, n-k+1):
-            # 시작점을 (i, j)로 하는 k * k 정사각형의 총이익
+            # 시작점을 시작점(i, j), 끝점이(i+k, j+k)인 정사각형의 총이익
             profit = pre[i+k][j+k] - pre[i-1][j+k] - pre[i+k][j-1] + pre[i-1][j-1]
             max_profit = max(max_profit, profit)    # 최대 총이익 업데이트
 

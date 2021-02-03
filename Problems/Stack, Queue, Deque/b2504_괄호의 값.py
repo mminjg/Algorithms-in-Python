@@ -29,7 +29,7 @@ for x in str:
                     sum_value = 1
                 stack.append(2*sum_value)
                 break
-            elif stack[-1] == '[':
+            elif stack[-1] == '[':  # 올바르지 못함
                 print(0)
                 exit()
     elif x == ']':
@@ -46,7 +46,7 @@ for x in str:
                     sum_value = 1
                 stack.append(3 * sum_value)
                 break
-            elif stack[-1] == '(':
+            elif stack[-1] == '(':  # 올바르지 못함
                 print(0)
                 exit()
 
