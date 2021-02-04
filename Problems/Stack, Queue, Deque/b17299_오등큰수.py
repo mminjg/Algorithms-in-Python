@@ -24,3 +24,5 @@ while stack and i < n:
 
 for x in result:
     print(x, end=' ')
+
+# print(*result)
