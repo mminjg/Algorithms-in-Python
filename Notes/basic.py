@@ -31,6 +31,9 @@ for i in range(n):
     arr.append(a[index:index + m])
     index += m
 
+# 리스트 복사
+import copy
+arr2 = copy.deepcopy(arr)
 
 # 리스트 정렬
 a = [1, 10, 4, 7, 3]
