@@ -4,7 +4,10 @@
 ## Notes
 - BFS.py
 - Binary Search.py
-- DFS.py
+- DFS.py   
+- Kruskal.py
+- Topology Sort.py
+- Union-Find.py  
 - basic.py
 - 가장 긴 증가하는 부분 수열.py
 - 좌표.py
@@ -15,6 +18,7 @@
 - Brute Force
 - DFS, BFS
 - Dynamic Programming
+- Graph  
 - Greedy
 - Sorting
 - Stack, Queue, Deque
