@@ -13,21 +13,24 @@ def union_parent(parent, a, b):
         parent[b] = a
     else:
         parent[a] = b
+v, e = map(int, input().split())
+parent = [0] * (v + 1)
+edges = []
 
-n, m = map(int, input().split())
-parent = [0] * (n + 1)
-
-for i in range(n + 1):
+for i in range(1, v + 1):
     parent[i] = i
 
-for _ in range(m):
-    op, a, b = map(int, input().split())
-    # 팀 합치기
-    if op == 0:
+for _ in range(e):
+    a, b, c = map(int, input().split())
+    edges.append((c, a, b))
+
+edges.sort()
+
+result = 0
+for edge in edges:
+    cost, a, b = edge
+    if find_parent(parent, a) != find_parent(parent, b):
         union_parent(parent, a, b)
-    # 같은 팀 여부 확인
-    elif op == 1:
-        if find_parent(parent, a) == find_parent(parent, b):
-            print("YES")
-        else:
-            print("NO")
+        result += cost
+
+print(result)
