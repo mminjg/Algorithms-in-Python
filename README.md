@@ -23,4 +23,5 @@
 - Sorting
 - Stack, Queue, Deque
 - String
+- Tree
 - Two Pointer
