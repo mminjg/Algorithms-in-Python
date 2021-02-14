@@ -18,7 +18,7 @@ g = int(input())
 p = int(input())
 
 parent = [0] * (g + 1)
-for i in range(1, g):
+for i in range(1, g + 1):
     parent[i] = i
 
 result = 0

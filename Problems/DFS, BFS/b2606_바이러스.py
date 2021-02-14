@@ -27,6 +27,7 @@ while queue:
     # 바이러스 걸리는 컴퓨터 수 증가
     cnt += 1
     for w in range(1, n+1):
+        # 인접하고 방문하지 않았으면
         if graph[v][w] and not visited[w]:
             queue.append(w)
             visited[w] = True
