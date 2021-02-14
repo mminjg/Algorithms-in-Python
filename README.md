@@ -4,7 +4,9 @@
 ## Notes
 - BFS.py
 - Binary Search.py
-- DFS.py   
+- DFS.py
+- Dijkstra.py
+- Floyd-Warshall.py  
 - Kruskal.py
 - Topology Sort.py
 - Union-Find.py  
@@ -20,6 +22,7 @@
 - Dynamic Programming
 - Graph  
 - Greedy
+- Shortest Path  
 - Sorting
 - Stack, Queue, Deque
 - String
