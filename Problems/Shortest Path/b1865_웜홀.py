@@ -7,6 +7,7 @@ def bf(start):
     for i in range(n):
         for j in range(2*m+w):
             cur, next_node, cost = edges[j]
+            # 분리된 부분 위해 INF 조건 삭제
             if dist[cur] + cost < dist[next_node]:
                 dist[next_node] = dist[cur] + cost
                 if i == n - 1:
