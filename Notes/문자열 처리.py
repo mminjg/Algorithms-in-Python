@@ -14,4 +14,13 @@ for i in word:
     print(i)
 
 # 문자, 아스키코드
-ord('A') = 65
+ord('A')    # 65
+
+# 문자열인지 true, false
+s.isaplha()
+# 슷자인지 true, false
+s.isdigit()
+
+# 문자열 수식 계산
+exp = "(6+3)*2-(36/6)"
+print(eval(exp))
