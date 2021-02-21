@@ -4,7 +4,7 @@
 # 우상 대각선 /
 # i + j 가 일치
 
-def roatate_a_matrix_by_90_degree(a):
+def rotate_a_matrix_by_90_degree(a):
     n = len(a)  # 행 길이 계산
     m = len(a[0])   # 열 길이 계산
     result = [[0]*n for _ in range(m)]  # 결과 리스트
