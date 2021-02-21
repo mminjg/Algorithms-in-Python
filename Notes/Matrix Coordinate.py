@@ -4,6 +4,14 @@
 # 우상 대각선 /
 # i + j 가 일치
 
+def roatate_a_matrix_by_90_degree(a):
+    n = len(a)  # 행 길이 계산
+    m = len(a[0])   # 열 길이 계산
+    result = [[0]*n for _ in range(m)]  # 결과 리스트
+    for i in range(n):
+        for j in range(m):
+            result[j][n-i-1] = a[i][j]
+    return result
 
 # [1] x, y 따로
 # 이동할 네 방향 정의(상, 하, 좌, 우)
