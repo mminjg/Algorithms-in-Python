@@ -2,7 +2,7 @@ import sys
 from collections import deque
 input = sys.stdin.readline
 
-# 반시계 방향
+# 반시계 방향 우, 하, 좌, 상
 dx = [0, -1, 0, 1]
 dy = [1, 0, -1, 0]
 
@@ -54,6 +54,7 @@ d = 0
 idx = 0
 
 while True:
+    # 방향 변환 횟수가 남아있고, 방향을 바꿀 때라면
     if idx < l and sec == info[idx][0]:
         if info[idx][1] == 'L':
             d = (d+1) % 4
