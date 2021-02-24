@@ -4,12 +4,13 @@
 ## Notes
 - BFS.py
 - Binary Search.py
-- Binary-Tree
+- Binary-Tree.py
 - DFS.py
 - Dijkstra.py
 - Floyd-Warshall.py  
 - Matrix Coordinate
 - Kruskal.py
+- Map, Set.py
 - Prefix-Tree(Trie).py
 - Topology Sort.py
 - Union-Find.py  
@@ -26,6 +27,7 @@
 - Graph  
 - Greedy
 - Implementation
+- Map, Set, Number Theory
 - Shortest Path  
 - Sorting
 - Stack, Queue, Deque
