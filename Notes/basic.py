@@ -95,6 +95,11 @@ def heapsort(iterable):
         result.append(-heapq.heappop(h))
     return result
 
+# 기존 리스트를 힙으로 변환
+heap = [4, 1, 7, 3, 8, 5]
+heapq.heapify(heap)
+print(heap)
+# [1, 3, 5, 4, 8, 7]
 
 # 아스키코드 <-> 문자
 ord('a')
