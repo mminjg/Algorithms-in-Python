@@ -1,37 +1,41 @@
 import sys
 import copy
 from collections import deque
-
 input = sys.stdin.readline
 
-n, r = map(int, input().split())
 
-indegree = [0] * (n + 1)
-graph = [[] for _ in range(n + 1)]
-time = list(map(int, input().split()))
-time.insert(0, 0)
+def solution(n, r, goal, N, R):
+    graph = [[] for _ in range(N + 1)]
+    indegree = [0] * (N + 1)
+    q = deque()
+    n.insert(0, 0)
+    result = copy.deepcopy(n)
 
-for _ in range(r):
-    a, b = map(int, input().split())
-    graph[a].append(b)
-    indegree[b] += 1
+    for a, b in r:
+        graph[a].append(b)
+        indegree[b] += 1
 
-target = int(input())
-
-result = copy.deepcopy(time)
-
-q = deque()
-
-for i in range(1, n + 1):
-    if indegree[i] == 0:
-        q.append(i)
-
-while q:
-    now = q.popleft()
-    for i in graph[now]:
-        result[i] = max(result[i], result[now] + time[i])
-        indegree[i] -= 1
+    for i in range(N):
         if indegree[i] == 0:
             q.append(i)
 
-print(result[target])
+    while q:
+        now = q.popleft()
+        for i in graph[now]:
+            result[i] = max(result[i], result[now] + n[i])
+            indegree[i] -= 1
+            if indegree[i] == 0:
+                q.append(i)
+
+    return result[goal]
+
+
+N, R = map(int, input().split())
+n = list(map(int, input().split()))
+r = []
+for _ in range(R):
+    a, b = map(int, input().split())
+    r.append([a, b])
+goal = int(input())
+
+print(solution(n, r, goal, N, R))
