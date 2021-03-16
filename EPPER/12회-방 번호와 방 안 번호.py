@@ -1,5 +1,8 @@
-n = int(input())
+def solution(n):
+    room_num = (n - 1) // 15 + 1
+    num = (n - 1) % 15 + 1
+    return room_num, num
 
-room_n = (n - 1) // 15 + 1
-in_n = (n - 1) % 15 + 1
-print(str(room_n) + ' ' + str(in_n))
+
+n = int(input())
+print(*solution(n))
