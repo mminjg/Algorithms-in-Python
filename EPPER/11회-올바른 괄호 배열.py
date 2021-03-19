@@ -15,8 +15,8 @@ def solve(left, right):
         else:
             return solve(left - 1, right)
 
-def solution(left, right):
-    solve(n, n)
+def solution(n):
+    return solve(n, n)
 
 n = int(input())
 print(solution(n))
