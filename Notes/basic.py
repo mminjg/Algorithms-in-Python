@@ -44,6 +44,9 @@ s.sort(key=len) # len에 따라 정렬
 k = [[1,2],[6,1],[4,9],[3,0]]
 k.sort(key=lambda x: (x[1], x[0]))    # 1번째 원소, 0번째 원소 기준 정렬
 
+# 리스트에 배열의 항복을 추가
+arr.extend(x)
+
 # 반복되는 수열
 M= 8; K=3
 int(M / (K + 1)) * K + M % (K + 1)
@@ -57,7 +60,7 @@ from itertools import combinations_with_replacement
 data = ['a','b','c']
 
 # 모든 순열 구하기
-result = list(permutations(data,3))
+result = list(map(''.join, permutations(data,3)))
 # 모든 조합 구하기
 result = list(combinations(data, 3))
 # 중복 순열 구하기
